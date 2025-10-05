@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Electronics Department</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #a0e9ff, #caf0f8);
+      color: #ffb3c6;
+      font-family: "Segoe UI", sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1, h2, h3 {
+      opacity: 0;
+      margin: 10px 0;
+      text-shadow: 0 0 10px #ffb3c6;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff66b2;
+      animation-delay: 0s;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ffcc33;
+      animation-delay: 2s;
+    }
+
+    h3 {
+      font-size: 1.7em;
+      color: #ff66b2;
+      animation-delay: 4s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .components {
+      display: flex;
+      gap: 25px;
+      margin-top: 30px;
+      animation: float 2s infinite alternate;
+    }
+
+    .components img {
+      width: 70px;
+      height: 70px;
+      filter: drop-shadow(0 0 10px #ffcc33);
+      transition: transform 0.3s ease;
+    }
+
+    .components img:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <h2>to Electronics Science Department</h2>
+  <h3>KTHM College, Nashik</h3>
+
+  <div class="components">
+    <img src="https://cdn-icons-png.flaticon.com/512/679/679806.png" alt="Resistor">
+    <img src="https://cdn-icons-png.flaticon.com/512/1165/1165884.png" alt="Capacitor">
+    <img src="https://cdn-icons-png.flaticon.com/512/4205/4205667.png" alt="LED">
+    <img src="https://cdn-icons-png.flaticon.com/512/3255/3255577.png" alt="Microcontroller">
+  </div>
+</body>
+</html>
